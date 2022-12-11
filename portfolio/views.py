@@ -1,9 +1,7 @@
-from django.views.generic import TemplateView
+from django.views.generic import DetailView, TemplateView
+
+from portfolio.models import Profile
 
 
 class PortfolioView(TemplateView):
-    ...
-
-
-class CVView(TemplateView):
-    ...
+    template_name = "index.html"
